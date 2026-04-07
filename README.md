@@ -82,11 +82,3 @@ cargo test
 
 ```
 
-## 📖 Educational Exercises
-
-To deepen your understanding of this architecture, try the following:
-
-1. **Implement Delta-Encoding:** Modify the `maintenance_evict` function to compress the byte array using XOR-based compression before moving it to Tier 2.
-2. **SIMD Search:** Use the `std::simd` crate to write a function that finds a specific timestamp within a `RawPage` in parallel across CPU lanes.
-3. **Kernel-Bypass:** Research how to replace the mock Tier 2 flush with `io_uring` for asynchronous disk I/O.
-
